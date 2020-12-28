@@ -2,6 +2,8 @@
 title: "Singularity and gstreamer"
 date: 2020-09-01
 categories: ["singularity", "gstreamer"]
+layout: single
+classes: wide
 ---
 
 ## Singularity Recipe file:

@@ -3,6 +3,8 @@ title: Bash loops
 subtitle: Safer internet sessions for kids
 date: 2020-04-30
 categories: [bash]
+layout: single
+classes: wide
 ---
 
 ### Bash for loops and while loops

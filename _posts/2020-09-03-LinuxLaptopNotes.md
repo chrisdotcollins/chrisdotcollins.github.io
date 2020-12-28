@@ -2,6 +2,8 @@
 title: "Linux Laptop Notes"
 date: 2020-09-03
 categories: ["Linux","BunsenLabs","Singularity"]
+layout: single
+classes: wide
 ---
 
 ## Display

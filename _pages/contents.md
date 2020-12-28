@@ -1,8 +1,6 @@
 ---
 permalink: /contents/
 title: "Contents"
-layout: single
-classes: wide
 ---
 
 <div id="dates3">
