@@ -3,6 +3,8 @@ title: sed Variables
 #subtitle: 
 date: 2020-12-28
 categories: ["bash", "sed"]
+layout: single
+classes: wide
 ---
 
 ### Here Docs
