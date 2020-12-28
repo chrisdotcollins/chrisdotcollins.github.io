@@ -1,6 +1,7 @@
 ---
 permalink: /contents/
 title: "Contents"
+layout: single
 classes: wide
 ---
 
