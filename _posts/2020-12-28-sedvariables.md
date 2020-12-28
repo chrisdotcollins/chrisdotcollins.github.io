@@ -26,7 +26,9 @@ Example, above command changes:
 139.222.146.2 node002
 139.222.146.3 node003
 ``` 
+
 To
+
 
 ```
 139.222.146.1 node001.escluster
