@@ -16,7 +16,7 @@ Working with variables in sed
 cat hosts-escluster-nodes.cfg.2 | sed 's/\(node[0-9]*\)/\1.escluster/g'
 ```
  
-Variables are within escaped brackets \\(VARIABLE\\) and inserted as \1.
+Variables are within escaped brackets ```\(VARIABLE\)``` and inserted as \1.
 Can have multiple variables, so can use \1 \2 etc
  
 Example, above command changes:
