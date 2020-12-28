@@ -1,63 +1,148 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: Starving Artist Jekyll Theme
-email: ctarwater@chrisanthropic.com
-author: Chrisanthropic
-
-keywords: jekyll, jekyll theme, portfolio theme, artist theme
-description: Witty description here.
-
-# Only use this if you are serving your site via Github Pages
-github:
-  url: "https://chrisanthropic.github.io/starving-artist-jekyll-theme"
-
-header: images/logo.png
-
-# Formspree contact Form
-contact_form: "https://formspree.io/ctarwater@chrisanthropic.com"
-
-
-# Exclude our ruby stuff
-exclude: [.bundle, .vendor, .bin, starving-artist.gemspec, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, starving-artist-jekyll-theme-*.gem]
-
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Chris.Collins
+email: chrisdotcollins@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+twitter_username: chrisdotcollins
+#github_username: username
+#minimal_mistakes_skin: default
+#minimal_mistakes_skin: air
+minimal_mistakes_skin: contrast
+#minimal_mistakes_skin: dirt
+search: true
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-theme: starving-artist-jekyll-theme
-  
-# Plugins
-gems:
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
-feed:
-  path: atom.xml
-  
-# Compress our Css
-#sass:
-#    style: :compressed
+author:
+  name   : "Chris Collins"
+#  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/calvinsupercomputer.png"
+  bio    : "HPC and Linux administrator. This site is mainly my own knowledge base and technical scrapbook!"
+  links:
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://"
+    - label: "@chrisdotcollins"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/chrisdotcollins"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      icon: "fab fa-twitter"
+#      url: "https://twitter.com/chrisdotcollins"
+    - label: "chrisdotcollins@gmail.com"
+      icon: "far fa-fw fa-envelope"
+      url: "mailto://chrisdotcollins@gmail.com"
+    - label: "chris-collins-hpc"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chris-collins-hpc/"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
 
-include: ['_pages']
+footer:
+  links:
+    - label: "@chrisdotcollins"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "chrisdotcollins@gmail.com"
+      icon: "far fa-fw fa-envelope"
+      url: "mailto://chrisdotcollins@gmail.com"
+    - label: "chris-collins-hpc"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chris-collins-hpc/"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
 
-permalink: /blog/:year/:title
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      related: false
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _articles
+  - scope:
+      path: "_articles"
+      type: articles
+    values:
+      layout: single
+      author_profile: false
+      share: false
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 collections:
-  - galleries
-
-#### SEO Stuff
-# Google Analytics
-google_universal_analytics: 
-google_universal_analytics_cookiedomain: auto
-
-# Facebook Opengraph
-facebook_user:
-facebook_app_id:                                #enter your App ID
-facebook_locale: en_US
-facebook_page:                                  #the URL of your Facebook Page
-facebook_image: images/author.jpg                      #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
-
-# Twitter Cards
-twitter_user: 
-twitter_card: true
-twitter_image: images/author.jpg                       #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+  articles:
+   output: true
+   permalink: /:collection/:path/

@@ -1,56 +1,27 @@
-# Starving Artist Jekyll Theme
-![Starving Artist Jekyll Theme screenshot](screenshot.png)
+# Minimal Mistakes remote theme starter
 
-# Install as Gem Theme
-Jekyll requires Ruby so make sure Ruby is installed before you begin.
+Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
-### Start a New Site
-- Install Jekyll and Bundler
-  - `gem install bundler`
-- Create a New Site
-  - `jekyl new mysite`
-- Move into that directory
-  - `cd mysite`
-- Install Required Gems
-  - `bundle install`
-- Verify
-  - Run `jekyll serve`
-  - Browse to [http://localhost:4000](http://localhost:4000)
-- Download Starving Artist Theme
-  - Replace the line `gem "minima"` with this:
-    - `gem "starving-artist-jekyll-theme"`
-  - Run `bundle install`
-- Tell Jekyll to use Starving Artist Theme
-  - Open `_config.yml` and change the line `theme: minima` to this:
-    - `theme: starving-artist-jekyll-theme`
-- Import the Starving Artist CSS
-  - Open your `css/style.css` and change the line `@import "minima;"` to this:
-    - `@import "starving-artist";`
+Contains basic configuration to get you a site with:
 
+- Sample posts.
+- Sample top navigation.
+- Sample author sidebar with social links.
+- Sample footer links.
+- Paginated home page.
+- Archive pages for posts grouped by year, category, and tag.
+- Sample about page.
+- Sample 404 page.
+- Site wide search.
 
-### Migrate an Existing Site
-**NOTE** This requires you to be upgraded to at least Jekyll 3.2 which added support for themes.
+Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
-- Download Starving Artist Theme
-  - Replace the line `gem "minima"` with this:
-    - `gem "starving-artist-jekyll-theme"`
-  - Run `bundle install`
-- Tell Jekyll to use Starving Artist Theme
-  - Open `_config.yml` and change the line `theme: minima` to this:
-    - `theme: starving-artist-jekyll-theme`
-- Import the Starving Artist CSS
-  - Open your `css/style.css` and change the line `@import "minima;"` to this:
-    - `@import "starving-artist";`
+---
 
-# Jekyll 2.x Method
-Jekyll requires Ruby so make sure Ruby is installed before you begin.
+## Troubleshooting
 
-- Download this site
-  - `git clone https://github.com/chrisanthropic/starving-artist-jekyll-theme.git`
-- Move into its directory
-  - `cd starving-artist-jekyll-theme`
-- Install Required Gems
-  - `bundle install`
-- Verify
-  - Run `jekyll serve`
-  - Browse to [http://localhost:4000](http://localhost:4000)
+If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+
+- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
+- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
+- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
