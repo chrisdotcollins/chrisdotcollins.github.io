@@ -6,9 +6,6 @@ categories: ["bash", "sed"]
 layout: single
 classes: wide
 ---
-
-### Here Docs
-
  
 Working with variables in sed
  
