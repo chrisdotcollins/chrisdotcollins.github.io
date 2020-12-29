@@ -9,5 +9,5 @@ main:
     url: /about/
   - title: "Articles"
     url: /articles/
-  - title: "Contents"
-    url: /contents/
+  - title: "Notes"
+    url: /notes/
