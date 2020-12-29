@@ -1,6 +1,6 @@
 ---
-permalink: /notes/
-title: "Notes"
+permalink: /contents/
+title: "Contents"
 ---
 
 <div id="dates3">
