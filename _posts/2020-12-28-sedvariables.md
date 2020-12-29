@@ -6,7 +6,7 @@ categories: ["bash", "sed"]
 layout: single
 classes: wide
 ---
- 
+
 Working with variables in sed
  
 ```
